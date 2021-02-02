@@ -6,7 +6,7 @@ x-logger: &logger
       max-size: "10m"
       max-file: "3"
 x-common: &common
-  image: darkatse/xmly-speed:latest
+  image: q123458384/xmly_speed:latest
   build:
     context: .
     dockerfile: ./Dockerfile
