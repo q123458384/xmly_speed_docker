@@ -1,7 +1,7 @@
 name: Build Image
 on:
-  release:
-    types: [published]
+  #防止fork乱用action设置只能手动触发构建
+  workflow_dispatch:
 jobs:
   build:
       runs-on: ubuntu-latest
