@@ -13,10 +13,12 @@ services:
     image: q123458384/xmly_speed:latest
     ## driver: "json-file"
     container_name: xmly1
+    restart: no
     volumes:
       - /安装目录/xmly_speed.py:/xmly_speed.py \
       - /安装目录/util.py:/util.py \
-      ```
+```
+
 3、在xmly文件夹下运行：docker-compose up -d
 ### 其他
 - 查看log
@@ -28,7 +30,7 @@ docker-compose logs
 docker-compose down
 ```
 ## docker 安装方法：
-```docker run -itd --name=xmly -v /安装目录/xmly_speed.py:/xmly_speed.py -v /安装目录/util.py:/util.py q123458384/xmly_speed:latest```
+```docker run -itd --name=xmly -v /安装目录/xmly_speed.py:/xmly_speed.py -v /安装目录/util.py:/util.py --restart=no q123458384/xmly_speed:latest```
 
 
 
