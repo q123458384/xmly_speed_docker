@@ -6,7 +6,7 @@ RUN set -ex \
         && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
         && echo "Asia/Shanghai" > /etc/timezone
 
-RUN git clone --depth=1 https://github.com/Zero-S1/xmly_speed.git /xmly-speed \
+RUN git clone --depth=1 https://github.com/q123458384/xmly_speed_docker.git /xmly-speed \
         && cd /xmly-speed \
         && mkdir logs \
         && pip install --no-cache-dir -r requirements.txt
