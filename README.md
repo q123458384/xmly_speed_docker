@@ -15,8 +15,8 @@ services:
     container_name: xmly1
     restart: no
     volumes:
-      - /安装目录/xmly_speed.py:/xmly_speed.py \
-      - /安装目录/util.py:/util.py \
+      - /安装目录/xmly_speed.py:/xmly_speed.py
+      - /安装目录/util.py:/util.py
 ```
 
 3、在xmly文件夹下运行：docker-compose up -d
